@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css?family=Quattrocento+Sans|Parisienne");
+body,
+h1, h2, h3,
+p {
+  font-family: "Quattrocento Sans", sans-serif; }
+
+p {
+  line-height: 2;
+  font-size: 16px; }
+
+.wrap {
+  padding: 5% 10%; }
+
+#header {
+  background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url("/images/speed-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-attachment: fixed; }
+  #header .cl-hero {
+    margin-top: 20vh; }
+    #header .cl-hero h1 {
+      color: #333;
+      font-weight: bold;
+      font-family: "Parisienne", cursive;
+      font-size: 5em; }
+    #header .cl-hero p {
+      color: #333;
+      font-size: 2em; }
+
+.cl-nav {
+  padding-top: 25px; }
+  .cl-nav li {
+    font-size: 18px; }
+    .cl-nav li a {
+      color: #333; }
+      .cl-nav li a:hover {
+        color: gold; }

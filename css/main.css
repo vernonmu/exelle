@@ -29,6 +29,13 @@ p {
       color: #333;
       font-size: 2em; }
 
+footer {
+  background: black;
+  color: silver;
+  padding: 25px;
+  display: flex;
+  justify-content: space-around; }
+
 .cl-nav {
   padding-top: 25px; }
   .cl-nav li {

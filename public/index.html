@@ -1,22 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="app">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Limo | Home</title>
-
+    <title>Levete Limo | Home</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/main.css">
   </head>
-  <body>
+  <body ng-controller="mainCtrl">
     <section id="header">
       <div class="container-fluid">
         <ul class="nav justify-content-end cl-nav">
           <li class="nav-item">
-            <a class="nav-link active" href="#">About</a>
+            <a class="nav-link" href="#">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
+            <a class="nav-link active" href="#">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Contact</a>
@@ -25,7 +24,7 @@
       </div>
       <div class="container">
         <div class="cl-hero wrap text-center">
-          <h1>Exelle</h1>
+          <h1>Levete Transportation</h1>
           <p>You deserve impeccable transportation service</p>
         </div>
       </div>
@@ -33,9 +32,9 @@
     <section id="intro">
       <div class="container">
         <div class="intro-panel wrap">
-          <h1>Welcome to Exelle Limo</h1>
-          <p>Exelle Limousine and Party Bus Service offers a wide range of professional limousine services across multiple markets in the United States.</p>
-          <p>We strive to meet every detail of your transportation needs. At Exelle we guarantee a clean, on-time vehicle with the most courteous, attentive and professional driver. With the increase demand in the limousine services, we are here to make sure you get your transportation needs. If you are traveling, do it in style! We provide all kind of DFW transportation services. We are a part of the Dallas airport transportation service and provide you with the reliable shuttle services as well. You don't have to worry about being late for your flight. We will also pick you up from the airport and take you to your destination without any delay. You can remember us for any special occasions and events.</p>
+          <h1>Welcome to levete Limo</h1>
+          <p>levete Limousine and Party Bus Service offers a wide range of professional limousine services across multiple markets in the United States.</p>
+          <p>We strive to meet every detail of your transportation needs. At levete we guarantee a clean, on-time vehicle with the most courteous, attentive and professional driver. With the increase demand in the limousine services, we are here to make sure you get your transportation needs. If you are traveling, do it in style! We provide all kind of DFW transportation services. We are a part of the Dallas airport transportation service and provide you with the reliable shuttle services as well. You don't have to worry about being late for your flight. We will also pick you up from the airport and take you to your destination without any delay. You can remember us for any special occasions and events.</p>
         </div>
       </div>
     </section>
@@ -45,15 +44,42 @@
           <h2>Your Experience</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
-
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="wrap">
+          <h2>Services</h2>
+          <p>We provide a wide range of limousine and transporation services for any event, including:</p>
+          <ul>
+            <li>Wedding Celebrations</li>
+            <li>Anniversaries</li>
+            <li>Bacehlor/Bachelorette Parties</li>
+            <li>Quinceaneras</li>
+            <li>Prom Dances</li>
+            <li>Homecoming Dances</li>
+            <li>Birthdays</li>
+            <li>Children's Parties</li>
+            <li>Airports Limo Service</li>
+            <li>Sporting Events</li>
+            <li>Live Concerts</li>
+            <li>Corporate Sedan Hires</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="wrap">
+          <h2>Contact</h2>
+          <p>You're not going to hit a ridiculously long phone menu when you call us. Your email isn't going to the inbox abyss, never to be seen or heard from again. At Levete Transportation, we provide the exceptional service we'd want to experience ourselves!</p>
+        </div>
       </div>
     </section>
     <footer>
-
       <div class="">
         logo
       </div>
-
       <div class="">
         <ul>Services
           <li>Limousine Service</li>
@@ -64,12 +90,14 @@
           <li>Corporate Transportation</li>
         </ul>
       </div>
-
       <div class="">
         contact
       </div>
-
-
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js" charset="utf-8"></script>
+
+    <script src="/app.js" charset="utf-8"></script>
+    <script src="/mainCtrl.js" charset="utf-8"></script>
   </body>
 </html>

@@ -1,4 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Quattrocento+Sans|Parisienne");
+.cl-nav {
+  padding-top: 25px; }
+  .cl-nav li {
+    font-size: 18px; }
+    .cl-nav li a {
+      color: #333; }
+      .cl-nav li a:hover {
+        color: gold; }
+
 body,
 h1, h2, h3,
 p {
@@ -16,7 +25,7 @@ p {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  min-height: 500px;
   background-attachment: fixed; }
   #header .cl-hero {
     margin-top: 20vh; }
@@ -35,12 +44,3 @@ footer {
   padding: 25px;
   display: flex;
   justify-content: space-around; }
-
-.cl-nav {
-  padding-top: 25px; }
-  .cl-nav li {
-    font-size: 18px; }
-    .cl-nav li a {
-      color: #333; }
-      .cl-nav li a:hover {
-        color: gold; }

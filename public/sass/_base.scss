@@ -13,6 +13,12 @@ p {
   padding: 5% 10%;
 }
 
+.btn-champagne {
+  background: $primary-color;
+  border: 1px solid $primary-color;
+  padding: 15px 5px
+}
+
 #header {
   background:
     linear-gradient(
@@ -26,7 +32,8 @@ p {
   background-attachment: fixed;
 
   .cl-hero {
-    margin-top: 20vh;
+    margin-top: 75px;
+    padding-bottom: 265px;
 
     h1 {
       color: #333;
@@ -42,9 +49,80 @@ p {
 
 }
 
+.vehicle-container {
+  width: 100%;
+  text-align: center;
+}
+
+#header + .vehicle-container {
+  height: 250px;
+  position: relative;
+  top: -200px;
+}
+
 #intro {
   .intro-panel {
+    padding-bottom: 150px;
+  }
 
+  .cta {
+    width: 50%;
+    text-align: center;
+    padding: 50px 0 0;
+    margin: 0 auto;
+  }
+}
+
+#service {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.75),
+      rgba(255, 255, 255, 0.75)
+    ), url('../images/anders.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  background-attachment: fixed;
+  padding: 265px 0 175px;
+  position: relative;
+
+  .wrap {
+    background: rgba(255,255,255,0.9);
+
+    h2 {
+      padding-top: 75px;
+    }
+  }
+
+  .vehicle-container {
+    position: absolute;
+    top: 125px;
+  }
+
+  .lists {
+    display: flex;
+    justify-content: center;
+  }
+
+  .fleet {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    .fleet-image {
+      // margin: 5px;
+      // min-width: 250px;
+
+      p {
+        text-align: center;
+      }
+    }
+    .thumb {
+      width: 250px;
+      max-width: 100%;
+      height: auto;
+    }
   }
 }
 

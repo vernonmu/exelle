@@ -20,6 +20,11 @@ p {
 .wrap {
   padding: 5% 10%; }
 
+.btn-champagne {
+  background: #D1B78F;
+  border: 1px solid #D1B78F;
+  padding: 15px 5px; }
+
 #header {
   background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url("../images/speed-bg.jpg");
   background-position: center;
@@ -28,7 +33,8 @@ p {
   min-height: 500px;
   background-attachment: fixed; }
   #header .cl-hero {
-    margin-top: 20vh; }
+    margin-top: 75px;
+    padding-bottom: 265px; }
     #header .cl-hero h1 {
       color: #333;
       font-weight: bold;
@@ -37,6 +43,54 @@ p {
     #header .cl-hero p {
       color: #333;
       font-size: 2em; }
+
+.vehicle-container {
+  width: 100%;
+  text-align: center; }
+
+#header + .vehicle-container {
+  height: 250px;
+  position: relative;
+  top: -200px; }
+
+#intro .intro-panel {
+  padding-bottom: 150px; }
+
+#intro .cta {
+  width: 50%;
+  text-align: center;
+  padding: 50px 0 0;
+  margin: 0 auto; }
+
+#service {
+  background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url("../images/anders.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  background-attachment: fixed;
+  padding: 265px 0 175px;
+  position: relative; }
+  #service .wrap {
+    background: rgba(255, 255, 255, 0.9); }
+    #service .wrap h2 {
+      padding-top: 75px; }
+  #service .vehicle-container {
+    position: absolute;
+    top: 125px; }
+  #service .lists {
+    display: flex;
+    justify-content: center; }
+  #service .fleet {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; }
+    #service .fleet .fleet-image p {
+      text-align: center; }
+    #service .fleet .thumb {
+      width: 250px;
+      max-width: 100%;
+      height: auto; }
 
 footer {
   background: black;

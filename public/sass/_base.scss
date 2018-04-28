@@ -41,9 +41,11 @@ p {
       font-family: $font-family-fancy;
       font-size: 5em;
     }
+
     p {
       color: #333;
       font-size: 2em;
+      padding-top: 25px;
     }
   }
 
@@ -132,4 +134,57 @@ footer {
   padding: 25px;
   display: flex;
   justify-content: space-around;
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.5em;
+  }
+  .vehicle-container {
+    img {
+      width: 100%;
+    }
+  }
+
+  #intro {
+    .cta {
+      width: 100%;
+    }
+  }
+
+  #header {
+    .cl-hero {
+      h1 {
+        font-size: 4em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+    }
+
+  }
+
+  #service {
+    .lists {
+      flex-flow: column;
+    }
+  }
+
+  #contact {
+    h2 {
+      margin-top: 25px;
+    }
+  }
+
+  footer {
+    flex-flow: column;
+
+    .services-list {
+      ul {
+        padding: 0;
+        list-style: none;
+      }
+    }
+  }
 }

@@ -9,15 +9,6 @@ p {
   font-size: 16px;
 }
 
-.wrap {
-  padding: 5% 10%;
-}
-
-.btn-champagne {
-  background: $primary-color;
-  border: 1px solid $primary-color;
-  padding: 15px 5px
-}
 
 #header {
   background:
@@ -184,6 +175,99 @@ footer {
       ul {
         padding: 0;
         list-style: none;
+      }
+    }
+  }
+}
+
+
+.wrap {
+  padding: 5% 10%;
+}
+
+.btn-champagne {
+  background: $primary-color;
+  border: 1px solid $primary-color;
+  padding: 15px 5px
+}
+
+.booking {
+  background: rgba(0,0,0,0.85);
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 50px;
+  transition: all 2s;
+
+  .form {
+    width: 500px;
+    margin: 50px auto;
+    border-radius: 4px;
+    background: #fafafa;
+    padding: 15px 20px;
+    color: #333;
+    // text-align: center;
+
+    h3 {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
+    h5 {
+      padding-top: 15px;
+    }
+
+    p {
+      line-height: 1;
+      text-align: left;
+      // padding: 10px 20px;
+    }
+
+    .form-buttons {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .btn-alert {
+    background: #ff7f7f;
+    color: white;
+  }
+
+  .close {
+    text-align: right;
+  }
+
+  .success-message {
+    background: white;
+    color: #333;
+    padding: 15px;
+    border-radius: 4px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .booking {
+    padding: 5px;
+    overflow-y: scroll;
+
+
+    .form {
+      width: auto;
+      margin-top: 5px;
+
+      h3 {
+        padding-bottom: 0;
+      }
+
+      h5 {
+        padding-top: 0;
+      }
+
+      p {
+        font-size: 14px;
       }
     }
   }

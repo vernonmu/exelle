@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Excelsior Limo | Home</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="/css/main.css">
   </head>
   <body ng-controller="mainCtrl">
@@ -14,12 +15,6 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Services</a>
           </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link active" href="#">About</a>
-          </li> -->
-          <!-- <li>
-            <a class="nav-link active" href="#">Fleet</a>
-          </li> -->
           <li class="nav-item">
             <a class="nav-link" href="#">Contact</a>
           </li>
@@ -43,21 +38,13 @@
           <p>Excelsior Luxury Transportation and Party Bus Service offers a wide range of professional limousine services across multiple markets in the United States.</p>
 
           <div class="cta">
-            <button type="button" class="btn-block btn-primary btn-lg btn-champagne" name="button">
+            <button type="button" class="btn-block btn-primary btn-lg btn-champagne" name="button" ng-click="showBooking = true">
               Book now
             </button>
           </div>
         </div>
       </div>
     </section>
-    <!-- <section>
-      <div class="container">
-        <div class="wrap">
-          <h2>Your Experience</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-      </div>
-    </section> -->
     <section id="service">
       <div class="vehicle-container">
         <img src="images/merce.png" alt="">
@@ -85,7 +72,7 @@
               <li>Corporate Sedan Hires</li>
             </ul>
           </div>
-          <h3>Fleet</h3>
+          <h3>Available</h3>
           <div class="fleet">
             <div class="fleet-image">
               <img class="thumb" src="images/300-limo.jpg" alt="">
@@ -154,7 +141,7 @@
     </section>
     <footer>
       <div class="">
-        logo
+        EXL
       </div>
       <div class="services-list">
         <h3>Services</h3>
@@ -174,9 +161,95 @@
         </p>
       </div>
     </footer>
+    <div ng-cloak class="booking" ng-show="showBooking == true">
+      <form class="form" ng-submit="createBooking(booking)" name="bookingForm" id="bookingForm">
+        <div class="close" ng-click="showBooking = false">
+          <i class="fa fa-window-close fa" aria-hidden="true"></i>
+        </div>
+        <h3>Booking</h3>
+        <p>Please complete these fields below and we will contact you to complete your reservation! If you have any questions, please feel free to call us at (214) 123-4567.</p>
+
+        <h5>Reservation Contact</h5>
+        <div class="form-group">
+          <input type="text"
+                 class="form-control"
+                 name=""
+                 value=""
+                 placeholder="Full name"
+                 ng-model="booking.name">
+        </div>
+        <div class="form-group">
+          <input type="email"
+                 class="form-control"
+                 id="exampleInputEmail1"
+                 aria-describedby="emailHelp"
+                 placeholder="Email"
+                 ng-model="booking.email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <input type="text"
+                 class="form-control"
+                 name=""
+                 value=""
+                 placeholder="Phone"
+                 ng-model="booking.phone">
+        </div>
+        <div class="form-group">
+          <label>Occasion</label>
+          <select class="form-control"
+                  name=""
+                  ng-model="booking.occasion">
+            <optgroup label="">
+              <option value="Corporate">Corporate</option>
+              <option value="[object Object]">Birthday</option>
+              <option value="Wedding">Wedding</option>
+              <option value="other">other</option>
+            </optgroup>
+          </select>
+          <small class="form-text text-muted">
+            Select the most related event using the field above.
+          </small>
+        </div>
+        <div class="form-group">
+          <input type="text"
+                 class="form-control"
+                 name="" value=""
+                 placeholder="Number of passengers"
+                 ng-model="booking.passengers">
+          <small class="form-text text-muted">
+            Select the estimated number of passengers.
+          </small>
+        </div>
+        <div class="form-group">
+          <label>Additional details & information</label>
+          <textarea class="form-control"  id="exampleFormControlTextarea1"
+          rows="3"
+          ng-model="booking.details"></textarea>
+        </div>
+        <div class="form-buttons">
+          <button type="submit" class="btn btn-success" name="button">
+            Submit
+          </button>
+          <button type="button" class="btn btn-alert" name="button" ng-click="showBooking = false">
+            Cancel
+          </button>
+        </div>
+      </form>
+    </div>
+    <div ng-cloak class="booking" ng-show="showSuccessMessage == true">
+      <div class="success-message">
+        <h5>Success!</h5>
+        <p>
+          Your reservation has been sent. We will contact you shortly.
+        </p>
+        <button type="button" name="button" ng-click="showSuccessMessage = false" class="btn btn-primary">
+          Close
+        </button>
+      </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js" charset="utf-8"></script>
-
     <script src="/app.js" charset="utf-8"></script>
     <script src="/mainCtrl.js" charset="utf-8"></script>
   </body>

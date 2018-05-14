@@ -17,14 +17,6 @@ p {
   line-height: 2;
   font-size: 16px; }
 
-.wrap {
-  padding: 5% 10%; }
-
-.btn-champagne {
-  background: #D1B78F;
-  border: 1px solid #D1B78F;
-  padding: 15px 5px; }
-
 #header {
   background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url("../images/speed-bg.jpg");
   background-position: center;
@@ -120,3 +112,63 @@ footer {
     footer .services-list ul {
       padding: 0;
       list-style: none; } }
+
+.wrap {
+  padding: 5% 10%; }
+
+.btn-champagne {
+  background: #D1B78F;
+  border: 1px solid #D1B78F;
+  padding: 15px 5px; }
+
+.booking {
+  background: rgba(0, 0, 0, 0.85);
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 50px;
+  transition: all 2s; }
+  .booking .form {
+    width: 500px;
+    margin: 50px auto;
+    border-radius: 4px;
+    background: #fafafa;
+    padding: 15px 20px;
+    color: #333; }
+    .booking .form h3 {
+      padding-top: 15px;
+      padding-bottom: 15px; }
+    .booking .form h5 {
+      padding-top: 15px; }
+    .booking .form p {
+      line-height: 1;
+      text-align: left; }
+    .booking .form .form-buttons {
+      display: flex;
+      justify-content: space-between; }
+  .booking .btn-alert {
+    background: #ff7f7f;
+    color: white; }
+  .booking .close {
+    text-align: right; }
+  .booking .success-message {
+    background: white;
+    color: #333;
+    padding: 15px;
+    border-radius: 4px;
+    text-align: center; }
+
+@media screen and (max-width: 480px) {
+  .booking {
+    padding: 5px;
+    overflow-y: scroll; }
+    .booking .form {
+      width: auto;
+      margin-top: 5px; }
+      .booking .form h3 {
+        padding-bottom: 0; }
+      .booking .form h5 {
+        padding-top: 0; }
+      .booking .form p {
+        font-size: 14px; } }

@@ -17,6 +17,19 @@ app.controller('mainCtrl', function($scope, $timeout){
         console.log('we have already closed the box, man.');
       }
     }, 10000)
-
   }
+
+  $scope.sendContactMessage = function(message) {
+    console.log('the contact message send: ', message);
+    $scope.message = {};
+    $scope.contactForm.$setPristine();
+    $scope.showContactSuccess = true;
+
+    $timeout(function() {
+      if ($scope.showContactSuccess == true) {
+        $scope.showContactSuccess = false;
+      }
+    }, 2500)
+  }
+
 })

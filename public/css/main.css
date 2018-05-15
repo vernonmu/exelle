@@ -97,27 +97,9 @@ footer {
   padding: 25px;
   display: flex;
   justify-content: space-around; }
-
-@media only screen and (max-width: 768px) {
-  h1 {
-    font-size: 1.5em; }
-  .vehicle-container img {
-    width: 100%; }
-  #intro .cta {
-    width: 100%; }
-  #header .cl-hero h1 {
-    font-size: 4em; }
-  #header .cl-hero p {
-    font-size: 1em; }
-  #service .lists {
-    flex-flow: column; }
-  #contact h2 {
-    margin-top: 25px; }
-  footer {
-    flex-flow: column; }
-    footer .services-list ul {
-      padding: 0;
-      list-style: none; } }
+  footer .services-list ul {
+    padding: 0;
+    list-style: none; }
 
 .wrap {
   padding: 5% 10%; }
@@ -133,22 +115,22 @@ footer {
   top: 0;
   width: 100vw;
   height: 100vh;
-  padding: 50px;
+  padding: 10px;
   transition: all 2s; }
   .booking .form {
     width: 500px;
-    margin: 50px auto;
+    margin: 25px auto;
     border-radius: 4px;
     background: #fafafa;
     padding: 15px 20px;
     color: #333; }
     .booking .form h3 {
       padding-top: 15px;
-      padding-bottom: 15px; }
+      padding-bottom: 0px; }
     .booking .form h5 {
       padding-top: 15px; }
     .booking .form p {
-      line-height: 1;
+      line-height: 1.5;
       text-align: left; }
     .booking .form .form-buttons {
       display: flex;
@@ -163,7 +145,9 @@ footer {
     color: #333;
     padding: 15px;
     border-radius: 4px;
-    text-align: center; }
+    text-align: center;
+    width: 500px;
+    margin: 25px auto; }
 
 @media screen and (max-width: 480px) {
   #header + .vehicle-container {
@@ -182,3 +166,21 @@ footer {
         padding-top: 0; }
       .booking .form p {
         font-size: 14px; } }
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.5em; }
+  .vehicle-container img {
+    width: 100%; }
+  #intro .cta {
+    width: 100%; }
+  #header .cl-hero h1 {
+    font-size: 4em; }
+  #header .cl-hero p {
+    font-size: 1em; }
+  #service .lists {
+    flex-flow: column; }
+  #contact h2 {
+    margin-top: 25px; }
+  footer {
+    flex-flow: column; } }

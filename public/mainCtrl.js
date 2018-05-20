@@ -1,12 +1,14 @@
-app.controller('mainCtrl', function($scope, $timeout){
+app.controller('mainCtrl', function($scope, $timeout, mainSrv){
   console.log('test control');
 
   $scope.createBooking = function(booking) {
     console.log('create booking fn has : ', booking);
+    mainSrv.createBooking(booking)
     $scope.showBooking = false;
     $scope.showSuccessMessage = true;
     $scope.booking = {};
     $scope.bookingForm.$setPristine();
+
 
     $timeout(function(){
       if ($scope.showSuccessMessage == true) {
@@ -21,6 +23,7 @@ app.controller('mainCtrl', function($scope, $timeout){
 
   $scope.sendContactMessage = function(message) {
     console.log('the contact message send: ', message);
+    mainSrv.sendContactMessage(message);
     $scope.message = {};
     $scope.contactForm.$setPristine();
     $scope.showContactSuccess = true;

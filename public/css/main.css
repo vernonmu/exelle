@@ -121,6 +121,7 @@ footer {
   width: 100vw;
   height: 100vh;
   padding: 10px;
+  overflow: scroll;
   transition: all 2s; }
   .booking .form {
     width: 500px;
@@ -153,6 +154,10 @@ footer {
     text-align: center;
     width: 500px;
     margin: 25px auto; }
+
+@media screen and (max-width: 1199px) {
+  #service .fleet {
+    justify-content: center; } }
 
 @media screen and (max-width: 480px) {
   #header + .vehicle-container {

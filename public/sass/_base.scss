@@ -138,6 +138,14 @@ footer {
       list-style: none;
     }
   }
+
+  a {
+    color: #ccc;
+    &:hover {
+      color: $primary-color;
+      text-decoration: none;
+    }
+  }
 }
 
 
